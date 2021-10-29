@@ -4,12 +4,45 @@ body {
     font-family: Montserrat;
     margin: 0px;
     padding: 0px;
+    
+}
+
+header {
+    background-color: #1f2937;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    height: 80px;
+    justify-content: space-between;
+}
+
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+ border: 1px solid red;
+}
+.logo {
+  color: white;
 }
 
 .links {
-
+    justify-content: flex-end;
 }
- .tip {
-     display: flex;
-     justify-content: center;
- }
+
