@@ -68,11 +68,10 @@ ul {
 .pic-1 img {
     display: flex;
     border: 2px solid white;
-    max-width: 100%;
     max-height: 100%;
     border-radius: 30px;
-    width: 40%;
-    
+    width: 200px;
+    min-width: 200px;
 }
 
 .pic-1 {
@@ -105,8 +104,8 @@ ul {
 
 .middle {
     display: flex;
-    justify-items: center;
-    align-items: ;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     margin: 20px;
     padding: 70px;
@@ -114,34 +113,27 @@ ul {
     
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+.middle .middle-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+    width: 220px;
+    padding: 20px;
 }
 
-.img-1 {
-    height: 200px;
-    width: 40%;
+.middle .middle-content p {
     text-align: center;
+    width: 200px;
 }
 
-.img-2 {
+.middle .middle-content img {
     height: 200px;
-    width: 40%;
-    text-align: center;
+    width: 200px;
+    margin: 8px;
 }
 
-.img-3 {
-    height: 200px;
-    width: 40%;
-    text-align: center;
-}
-
-.img-4 {
-    height: 200px;
-    width: 40%;
-    text-align: center;
-}
 
 .thor {
     display: flex;
@@ -240,3 +232,20 @@ img {
     color: white;
     padding: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 70px;
+        gap: 0px;
+        
+    }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
